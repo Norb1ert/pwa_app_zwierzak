@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Moja Aplikacja Finansowa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+
+
+  <div id="loginPage">
+    <h1>Logowanie</h1>
+    <input type="text" id="username" placeholder="Nazwa użytkownika" />
+    <br /><br />
+    <input type="password" id="password" placeholder="Hasło" />
+    <br /><br />
+    <button onclick="login()">Zaloguj się</button>
+    <p>Nie masz konta? <a href="#" onclick="showRegisterPage()">Zarejestruj się</a></p>
+  </div>
+
+
+  <div id="registerPage" style="display: none;">
+    <h1>Rejestracja</h1>
+    <input type="text" id="newUsername" placeholder="Wpisz nazwę użytkownika" />
+    <br /><br />
+    <input type="password" id="newPassword" placeholder="Wpisz hasło" />
+    <br /><br />
+    <button onclick="register()">Zarejestruj się</button>
+    <p>Masz już konto? <a href="#" onclick="showLoginPage()">Zaloguj się</a></p>
+  </div>
+
+
+  <div id="dashboard" style="display: none;">
+    <div class="auth-links">
+      <button onclick="logout()">Wyloguj się</button>
+    </div>
+
+    <h1>Zadbaj o swojego wirtualnego zwierzaka</h1>
+    <p>P.S nie przesadź z karmieniem</p>
+
+    <!-- <h2>Wylosuj swój szczęśliwy numer!</h2>
+    <button id="drawBtn">Losuj numer</button>
+    <p id="result"></p> -->
+
+    <div id="pet-status"></div>
+    <div class="pet-buttons">
+      <button onclick="pet.feed()">Nakarm</button>
+      <button onclick="pet.play()">Baw się</button>
+      <button onclick="pet.rest()">Odpoczywaj</button>
+      <button onclick="pet.work()">Praca</button>
+    </div>
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

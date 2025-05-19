@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 100px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: auto 100px;
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: #333;
+  }
+  
+  button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 200px;
+    align-self: center;
+  }
+
+  #pet-status {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      margin: 20px;
+      font-size: 1.2rem;
+    
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  #result {
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: #444;
+  }
+
+ 
+
+
+  .auth-link {
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 200px;
+    align-self: center;
+    text-decoration: none;
+    padding-right: 50px;
+    
+    color: #28a745;
+  }
+
+.cta {
+    text-decoration: none;
+    margin-bottom: 100px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 200px;
+    align-self: center;
+    text-decoration: none;
+  }
+  
